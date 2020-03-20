@@ -1,0 +1,16 @@
+link(rel="stylesheet", href="/css/app.css", data-inline)
+include mixins
+body.body
+  include preheader
+  +table({
+    block: 'post',
+    attrs: {
+      bgColor: '#F2F2F2',
+      width: '100%'
+    }
+  })
+    tr
+      td.post__stretch
+        include header
+        block content
+        include footer

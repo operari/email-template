@@ -1,0 +1,77 @@
++table({
+  mix: 'post__empty offset-top-7'
+})
+  tr
+    td.post__stretch .
++table({
+  mix: 'post__empty post__hr'
+})
+  tr
+    td.post__stretch .
++table({
+  mix: 'post__section post__section--wider offset-top-5'
+})
+  tr
+    td.post__stretch
+      +table({
+        mix: '',
+        attrs: {
+          width: 92,
+          align: 'left'
+        }
+      })
+        tr
+          td.post__stretch
+            img(src="images/image2.jpg" width="72" height="72" alt="")
+      +table({
+        mix: 'post__footer post__footer--manager',
+        attrs: {
+           width: 428,
+           align: 'left'
+        }
+      })
+        tr
+          td.post__stretch
+            p.post__footer-title Ольга Румянцева,
+            p Коммуникации с клиентами
+            p.post__footer-bottom Северсталь Маркет
+  +table({
+    mix: 'post__section post__section--wider offset-top-4 offset-bot-7'
+  })
+    tr
+      td.post__stretch
+        +table({
+          mix: 'post__footer-email',
+          attrs: {
+            width: 260,
+            align: 'left'
+          }
+        })
+          tr
+            td.post__stretch
+              b Email:&nbsp;
+              a(href="mailto:zakaz@severstal.com") zakaz@severstal.com
+        +table({
+          mix: 'post__footer-email',
+          attrs: {
+             width: 260,
+             align: 'left'
+          }
+        })
+          tr
+            td.post__stretch.offset-left-5
+              b Web:&nbsp;
+              a(href="mailto:market.severstal.com") market.severstal.com
+  +table({
+    mix: 'post__section post__section--wider post__section--footer post__content post__content--copyright offset-bot-5'
+  })
+    tr
+      td.post__stretch
+        p Вы получили это письмо, т.к. являетесь клиентом компании "Северсталь".
+        p
+          i © 2019, ПАО "Северсталь", все права защищены<br>
+          span г.Москва, ул.Клары Цеткин, 2.
+        p
+          i Если Вы хотите отказаться от рассылки новостей и предложений компании "Северсталь", пожалуйста, перейдите по&nbsp;
+          a(href="https://market.severstal.com/sap/bc/bsp/sap/crm_svy_public/survey.htm?sap-client=400&applid=CRM_SURVEY_MARKETING&svyid=%d0%9e%d0%a2%d0%9a%d0%90%d0%97%20%d0%9e%d0%a2%20%d0%a0%d0%90%d0%a1%d0%a1%d0%ab%d0%9b%d0%9e%d0%9a&vers=0000000006&lang=RU&parid=BSP_PARAM_HYB.XML&MIG=0050569594801EE9AFEC3C48350E8F1F&URLGUID=0050569594801EE9AFEA5F33B3E64469" target="_blank") ссылке
+          | .

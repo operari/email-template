@@ -1,0 +1,22 @@
+mixin table(params)
+  - params = params === undefined ? {} : params
+  - var bblock = params.block ? params.block : ''
+  - var mix = params.mix ? params.mix : ''
+  - var modifier = !params.modifier ? '' : bblock + '--' + params.modifier
+  -
+    var attrs = {
+      width: 600,
+      align: 'center',
+      cellpadding: 0,
+      cellspacing: 0,
+      border: 0,
+      bgColor: '#FFFFFF'
+    }
+  - attrs = Object.assign(attrs, params.attrs)
+  table(class=bblock + modifier + mix)&attributes(attrs ? attrs : '')
+    block
+
+mixin menu(arr)
+  each val, index in arr
+    td(align="center")
+      a(href="#").post__link= val

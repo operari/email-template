@@ -1,0 +1,44 @@
++table({
+  mix: 'post__empty post__hr'
+})
+  tr
+    td.post__stretch
+      span .
++table({
+  mix: 'post__section post__section--footer offset-top-4 offset-bot-4 '
+})
+  tr
+    td.post__stretch
+      +table({
+        mix: 'post__footer-email post__footer-email--break',
+        attrs: {
+          width: 166,
+          align: 'left'
+        }
+      })
+        tr
+          td.post__stretch
+            p: span Телефон:
+            p: a(href="tel:8-800-200-69-39"): b: span 8-800-200-69-39
+      +table({
+        mix: 'post__footer-email post__footer-email--break',
+        attrs: {
+           width: 166,
+           align: 'left'
+        }
+      })
+        tr
+          td.post__stretch
+            p: b: span Email:&nbsp;
+            p: a(href="mailto:zakaz@severstal.com"): span zakaz@severstal.com
+      +table({
+        mix: 'post__footer-email post__footer-email--break',
+        attrs: {
+           width: 166,
+           align: 'left'
+        }
+      })
+        tr
+          td.post__stretch
+            p: b: span Web:&nbsp;
+            p: a(href="https://market.severstal.com?utm_source=email&utm_medium=email&utm_campaign=abandoned_cart&utm_content=textlink" target="_blank"): span market.severstal.com

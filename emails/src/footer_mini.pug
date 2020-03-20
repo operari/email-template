@@ -1,0 +1,32 @@
++table({
+  mix: 'post__empty post__hr'
+})
+  tr
+    td.post__stretch .
++table({
+  mix: 'post__section post__section--footer offset-top-4 offset-bot-4 '
+})
+  tr
+    td.post__stretch
+      +table({
+        mix: 'post__footer-email',
+        attrs: {
+          width: 250,
+          align: 'left'
+        }
+      })
+        tr
+          td.post__stretch
+            span Телефон:&nbsp;
+            a(href="tel:8-800-200-69-39"): b 8-800-200-69-39
+      +table({
+        mix: 'post__footer-email',
+        attrs: {
+           width: 250,
+           align: 'left'
+        }
+      })
+        tr
+          td.post__stretch.offset-left-5
+            b Email:&nbsp;
+            a(href="mailto:zakaz@severstal.com") zakaz@severstal.com
