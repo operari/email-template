@@ -1,0 +1,79 @@
+extends layout.pug
+
+block content
+  +table({
+    mix: 'post__image',
+    attrs: {
+      width: 640
+    }
+  })
+    tr
+      td.post__stretch
+        img(src=`${imgPath}image.jpg` width="640" height="315" alt="")
+  +table({
+    mix: 'post__section post__content offset-top-4 offset-bottom-3'
+  })
+    tr
+      td.post__stretch
+        h1.post__title Hello, John!
+        p We regularly work to improve the interface and services of the online store. In the last update, we realized the opportunity to leave a request for any amount of metal in the selected warehouse.
+        p Now, if you need more products than are currently available, click on the “Request for a different quantity” link in the product card and fill out the required fields - in the near future we will contact you to clarify the delivery dates and details.
+  +table({
+    mix: 'post__image'
+  })
+    tr
+      td.post__stretch
+        img(src=`${imgPath}image1.jpg` width="600" height="600" alt="")
+  +table({
+    mix: 'post__section post__content post__content--pr',
+    attrs: {
+      bgColor: '#F4F9FB'
+    }
+  })
+    tr
+      td.post__stretch
+        p Buy metal in the online store "Lorem Market" - in our catalog there are more than 1,000 positions of metal products for any industry.
+  +table({
+    mix: 'post__section offset-top-5'
+  })
+    tr
+      td.post__stretch
+        a(href="#" class="post__button") Go to the website
+  +table({
+    mix: 'post__section post__content post__content--contact-text offset-top-6'
+  })
+    tr
+      td.post__stretch
+        p Have questions or suggestions<br> for improving the site?
+  +table({
+    mix: 'post__section post__content post__content--contact-title offset-top-3'
+  })
+    tr
+      td.post__stretch
+        p Contact us using:
+  +table({
+    mix: 'post__section post__content post__content--contact-info offset-top-4'
+  })
+    tr
+      td.post__stretch
+        +table({
+          mix: 'post__column',
+          attrs: {
+            width: 250,
+            align: 'left'
+          }
+        })
+          tr
+            td.post__stretch
+              p Feedback<br> forms
+        +table({
+          mix: 'post__column',
+          attrs: {
+            width: 250,
+            align: 'left'
+          }
+        })
+          tr
+            td.post__stretch
+              p Call<br>
+              a(href="tel:88008008080" target="_blank") 8-800-800-80-80

@@ -1,0 +1,77 @@
++table({
+  mix: 'post__empty offset-top-7'
+})
+  tr
+    td.post__stretch .
++table({
+  mix: 'post__empty post__hr'
+})
+  tr
+    td.post__stretch .
++table({
+  mix: 'post__section post__section--wider offset-top-5'
+})
+  tr
+    td.post__stretch
+      +table({
+        mix: 'post__column',
+        attrs: {
+          width: 92,
+          align: 'left'
+        }
+      })
+        tr
+          td.post__stretch
+            img(src=`${imgPath}image2.jpg` width="72" height="72" alt="")
+      +table({
+        mix: 'post__column post__footer post__footer--manager',
+        attrs: {
+           width: 428,
+           align: 'left'
+        }
+      })
+        tr
+          td.post__stretch
+            p.post__footer-title John,
+            p Customer communications
+            p.post__footer-bottom Lorem Market
+  +table({
+    mix: 'post__section post__section--wider offset-top-4 offset-bottom-7'
+  })
+    tr
+      td.post__stretch
+        +table({
+          mix: 'post__footer-email post__column',
+          attrs: {
+            width: 260,
+            align: 'left'
+          }
+        })
+          tr
+            td.post__stretch
+              b Email:&nbsp;
+              a(href="mailto:order@lorem.com") order@lorem.com
+        +table({
+          mix: 'post__footer-email post__column',
+          attrs: {
+             width: 260,
+             align: 'left'
+          }
+        })
+          tr
+            td.post__stretch.offset-left-5
+              b Web:&nbsp;
+              a(href="mailto:market.lorem.com") market.lorem.com
+  +table({
+    mix: 'post__section post__section--wider post__section--footer post__content post__content--copyright offset-bottom-5'
+  })
+    tr
+      td.post__stretch
+        p You have received this email because You are a client of the company "Lorem".
+        p
+          i © 2019, "Lorem". All rights reserved<br>
+          span Dublin, California(CA).
+        p
+          i If you want to unsubscribe from Lorem news and offers, please follow the&nbsp;
+          a(href="#" target="_blank") link
+          | .

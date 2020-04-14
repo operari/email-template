@@ -1,1 +1,6 @@
+.*
+!.gitignore
+!.babelrc
+!.gulpenvrc
 /node_modules
+/build

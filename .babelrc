@@ -1,0 +1,12 @@
+{
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "corejs": "entry"
+        }
+      ]
+    ],
+    "retainLines": true
+  }
+  
