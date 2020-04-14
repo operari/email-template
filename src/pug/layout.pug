@@ -1,4 +1,9 @@
-link(rel="stylesheet", href="/css/app.css", data-inline)
+- var imgPath = "../../src/images/"
+
+if isDevelopment
+  include head
+else
+  link(rel="stylesheet", href="build/css/style.css", data-inline)
 include mixins
 body.body
   include preheader

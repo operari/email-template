@@ -2,28 +2,28 @@ extends layout.pug
 
 block content
   +table({
-    mix: '',
+    mix: 'post__image',
     attrs: {
       width: 640
     }
   })
     tr
       td.post__stretch
-        img(src="images/image.jpg" width="640" height="315" alt="")
+        img(src=`${imgPath}image.jpg` width="640" height="315" alt="")
   +table({
-    mix: 'post__section post__content offset-top-4 offset-bot-3'
+    mix: 'post__section post__content offset-top-4 offset-bottom-3'
   })
     tr
       td.post__stretch
-        h1.post__title Иван, добрый день
+        h1.post__title Иван, добрый день!
         p Мы регулярно работаем над улучшением интерфейса и сервисов интернет-магазина. В прошлом обновлении мы реализовали возможность оставить заявку на любое количество металлопроката на выбранном складе.
         p Теперь, если вам нужно больше продукции, чем сейчас есть в наличии, нажмите на ссылку «Заявка на другое количество» в карточке товара и заполните необходимые поля – в ближайшее время мы свяжемся с вами для уточнения сроков и деталей поставки.
   +table({
-    mix: ''
+    mix: 'post__image'
   })
     tr
       td.post__stretch
-        img(src="images/image1.jpg" width="600" height="600" alt="")
+        img(src=`${imgPath}image1.jpg` width="600" height="600" alt="")
   +table({
     mix: 'post__section post__content post__content--pr',
     attrs: {
@@ -32,7 +32,7 @@ block content
   })
     tr
       td.post__stretch
-        p Покупайте металлопрокат в интернет-магазине «Северсталь Маркет» – в нашем каталоге представлено более 1 000 позиций металлопродукции для любой отрасли бизнеса.
+        p Покупайте металлопрокат в интернет-магазине «Лорем Маркет» – в нашем каталоге представлено более 1 000 позиций металлопродукции для любой отрасли бизнеса.
   +table({
     mix: 'post__section offset-top-5'
   })
@@ -57,7 +57,7 @@ block content
     tr
       td.post__stretch
         +table({
-          mix: '',
+          mix: 'post__column',
           attrs: {
             width: 250,
             align: 'left'
@@ -67,7 +67,7 @@ block content
             td.post__stretch
               p Формы<br> обратной связи
         +table({
-          mix: '',
+          mix: 'post__column',
           attrs: {
             width: 250,
             align: 'left'
@@ -76,4 +76,4 @@ block content
           tr
             td.post__stretch
               p Позвоните<br>
-              a(href="tel:88002006939" target="_blank") 8-800-200-69-39
+              a(href="tel:88008008080" target="_blank") 8-800-800-80-80

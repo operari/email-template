@@ -3,17 +3,21 @@ const path = require('path');
 
 const email = new Email({
   juice: true,
+  preview: {
+    id: 'output',
+    dir: path.resolve('./build/output'),
+    open: true
+  },
   juiceResources: {
     preserveImportant: true,
     webResources: {
-      relativeTo: path.resolve('build')
+      relativeTo: path.resolve('.')
     }
   },
   message: {
     from: 'niftylettuce@gmail.com'
   },
-  // uncomment below to send emails in development/test env:
-  // send: true
+  send: true,
   transport: {
     jsonTransport: true
   }

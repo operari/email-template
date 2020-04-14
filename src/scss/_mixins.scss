@@ -1,0 +1,11 @@
+// Mixins
+@mixin generateLayoutOffsets($parent: body, $directions: top right bottom left, $offsetCount: 8, $gutter: 8px) {
+  @each $direction in $directions {
+    /* offset-#{$direction} from 0px to #{$offsetCount * $offsetCount}px */
+    @for $i from 0 through $offsetCount {
+      #{$parent} .offset-#{$direction}-#{$i} {
+        padding-#{$direction}: $i * $gutter;
+      }
+    }
+  }  
+}
